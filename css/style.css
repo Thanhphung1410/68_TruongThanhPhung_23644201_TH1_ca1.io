@@ -1,0 +1,111 @@
+:root {
+    --bg-start: #0f172a;
+    --bg-end: #111827;
+    --card: #111827;
+    --card-2: #1f2937;
+    --text: #e5e7eb;
+    --muted: #94a3b8;
+    --accent: #22d3ee;
+    --accent-dark: #0ea5b7;
+    --brand: #2563eb;
+    --brand-dark: #1d4ed8;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: radial-gradient( 1200px 800px at 10% 10%, #172554 0%, var(--bg-start) 45%, var(--bg-end) 100%);
+    color: var(--text);
+    text-align: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: linear-gradient(180deg, var(--card) 0%, var(--card-2) 100%);
+    width: 350px;
+    margin: 80px auto;
+    padding: 32px 28px;
+    border-radius: 18px;
+    box-shadow: 0 24px 60px rgba(2, 6, 23, 0.55);
+    border: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.container p {
+    color: var(--muted);
+}
+
+.icon {
+    margin-right: 8px;
+    color: var(--accent);
+}
+
+img {
+    height: 250px;
+    width: 250px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100x;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid rgba(34, 211, 238, 0.35);
+    box-shadow: 0 12px 28px rgba(34, 211, 238, 0.18);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.avatar:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 18px 36px rgba(34, 211, 238, 0.25);
+}
+
+.social a {
+    display: inline-block;
+    margin: 10px 8px;
+    padding: 9px 16px;
+    background: linear-gradient(180deg, var(--brand) 0%, var(--brand-dark) 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.social a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(37, 99, 235, 0.32);
+    filter: brightness(1.05);
+    color: red;
+}
+
+.social i {
+    margin-right: 6px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 18px;
+    border: none;
+    background: linear-gradient( 180deg, var(--accent) 0%, var(--accent-dark) 100%);
+    color: #0b1b1f;
+    font-weight: 600;
+    border-radius: 999px;
+    cursor: pointer;
+    box-shadow: 0 12px 22px rgba(34, 211, 238, 0.28);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 16px 26px rgba(34, 211, 238, 0.36);
+    filter: brightness(1.05);
+    color: red;
+}
+
+a {
+    color: var(--accent);
+}
+
+#student-id {
+    display: none;
+}
